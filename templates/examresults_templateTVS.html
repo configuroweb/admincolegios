@@ -1,0 +1,16 @@
+<!-- Edit this file to change the layout of each record in the table view -->
+<!-- To disable clicking of a field, remove the  and  formatters around it-->
+
+<!-- If you wish to hide the table view header that contains the column titles, -->
+<!-- add the following to the examresults_init() hook (in hooks/examresults.php file) -->
+<!--     $options->ShowTableHeader = 0;     -->
+
+		<td id="examresults-student-<%%VALUE(id)%%>" class="examresults-student"><%%VALUE(student)%%></td>
+		<td id="examresults-RegNo-<%%VALUE(id)%%>" class="examresults-RegNo"><%%VALUE(RegNo)%%></td>
+		<td id="examresults-Class-<%%VALUE(id)%%>" class="examresults-Class"><%%VALUE(Class)%%></td>
+		<td id="examresults-Stream-<%%VALUE(id)%%>" class="examresults-Stream"><%%VALUE(Stream)%%></td>
+		<td id="examresults-Category-<%%VALUE(id)%%>" class="examresults-Category"><%%VALUE(Category)%%></td>
+		<td id="examresults-Subject-<%%VALUE(id)%%>" class="examresults-Subject"><%%VALUE(Subject)%%></td>
+		<td id="examresults-Marks-<%%VALUE(id)%%>" class="examresults-Marks text-right"><%%VALUE(Marks)%%></td>
+		<td id="examresults-Term-<%%VALUE(id)%%>" class="examresults-Term"><%%VALUE(Term)%%></td>
+		<td id="examresults-AcademicYear-<%%VALUE(id)%%>" class="examresults-AcademicYear"><%%VALUE(AcademicYear)%%></td>

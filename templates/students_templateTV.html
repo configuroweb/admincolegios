@@ -1,0 +1,22 @@
+<!-- Edit this file to change the layout of each record in the table view -->
+<!-- To disable clicking of a field, remove the <%%SELECT%%> and <%%ENDSELECT%%> formatters around it-->
+
+<!-- If you wish to hide the table view header that contains the column titles, -->
+<!-- add the following to the students_init() hook (in hooks/students.php file) -->
+<!--     $options->ShowTableHeader = 0;     -->
+
+		<td id="students-FullName-<%%VALUE(id)%%>" class="students-FullName"><%%SELECT%%><%%VALUE(FullName)%%><%%ENDSELECT%%></td>
+		<td id="students-Gender-<%%VALUE(id)%%>" class="students-Gender"><%%SELECT%%><%%VALUE(Gender)%%><%%ENDSELECT%%></td>
+		<td id="students-DOB-<%%VALUE(id)%%>" class="students-DOB"><%%SELECT%%><%%VALUE(DOB)%%><%%ENDSELECT%%></td>
+		<td id="students-Photo-<%%VALUE(id)%%>" class="students-Photo"><a href="<%%TRANSLATION(ImageFolder)%%><%%VALUE(Photo)%%>" data-lightbox="students-Photo"><img src="thumbnail.php?i=<%%VALUE(Photo)%%>&t=students&f=Photo&v=tv" class="img-thumbnail"></a></td>
+		<td id="students-RegNo-<%%VALUE(id)%%>" class="students-RegNo"><%%SELECT%%><%%VALUE(RegNo)%%><%%ENDSELECT%%></td>
+		<td id="students-Class-<%%VALUE(id)%%>" class="students-Class"><%%SELECT%%><%%VALUE(Class)%%><%%ENDSELECT%%></td>
+		<td id="students-Stream-<%%VALUE(id)%%>" class="students-Stream"><%%SELECT%%><%%VALUE(Stream)%%><%%ENDSELECT%%></td>
+		<td id="students-Hostel-<%%VALUE(id)%%>" class="students-Hostel"><%%SELECT%%><%%VALUE(Hostel)%%><%%ENDSELECT%%></td>
+		<td id="students-DOJ-<%%VALUE(id)%%>" class="students-DOJ"><%%SELECT%%><%%VALUE(DOJ)%%><%%ENDSELECT%%></td>
+		<td id="students-Category-<%%VALUE(id)%%>" class="students-Category"><%%SELECT%%><%%VALUE(Category)%%><%%ENDSELECT%%></td>
+		<td id="students-AcademicYear-<%%VALUE(id)%%>" class="students-AcademicYear"><%%SELECT%%><%%VALUE(AcademicYear)%%><%%ENDSELECT%%></td>
+		<td id="students-TotalFees-<%%VALUE(id)%%>" class="students-TotalFees"><%%SELECT%%><%%VALUE(TotalFees)%%><%%ENDSELECT%%></td>
+		<td id="students-AdvanceFees-<%%VALUE(id)%%>" class="students-AdvanceFees text-right"><%%SELECT%%><%%VALUE(AdvanceFees)%%><%%ENDSELECT%%></td>
+		<td id="students-Balance-<%%VALUE(id)%%>" class="students-Balance text-right"><%%SELECT%%><%%VALUE(Balance)%%><%%ENDSELECT%%></td>
+		<td id="students-Parent-<%%VALUE(id)%%>" class="students-Parent"><%%SELECT%%><%%VALUE(Parent)%%><%%ENDSELECT%%></td>

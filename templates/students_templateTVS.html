@@ -1,0 +1,22 @@
+<!-- Edit this file to change the layout of each record in the table view -->
+<!-- To disable clicking of a field, remove the  and  formatters around it-->
+
+<!-- If you wish to hide the table view header that contains the column titles, -->
+<!-- add the following to the students_init() hook (in hooks/students.php file) -->
+<!--     $options->ShowTableHeader = 0;     -->
+
+		<td id="students-FullName-<%%VALUE(id)%%>" class="students-FullName"><%%VALUE(FullName)%%></td>
+		<td id="students-Gender-<%%VALUE(id)%%>" class="students-Gender"><%%VALUE(Gender)%%></td>
+		<td id="students-DOB-<%%VALUE(id)%%>" class="students-DOB"><%%VALUE(DOB)%%></td>
+		<td id="students-Photo-<%%VALUE(id)%%>" class="students-Photo"><a href="<%%TRANSLATION(ImageFolder)%%><%%VALUE(Photo)%%>" data-lightbox="students-Photo"><img src="thumbnail.php?i=<%%VALUE(Photo)%%>&t=students&f=Photo&v=tv" class="img-thumbnail"></a></td>
+		<td id="students-RegNo-<%%VALUE(id)%%>" class="students-RegNo"><%%VALUE(RegNo)%%></td>
+		<td id="students-Class-<%%VALUE(id)%%>" class="students-Class"><%%VALUE(Class)%%></td>
+		<td id="students-Stream-<%%VALUE(id)%%>" class="students-Stream"><%%VALUE(Stream)%%></td>
+		<td id="students-Hostel-<%%VALUE(id)%%>" class="students-Hostel"><%%VALUE(Hostel)%%></td>
+		<td id="students-DOJ-<%%VALUE(id)%%>" class="students-DOJ"><%%VALUE(DOJ)%%></td>
+		<td id="students-Category-<%%VALUE(id)%%>" class="students-Category"><%%VALUE(Category)%%></td>
+		<td id="students-AcademicYear-<%%VALUE(id)%%>" class="students-AcademicYear"><%%VALUE(AcademicYear)%%></td>
+		<td id="students-TotalFees-<%%VALUE(id)%%>" class="students-TotalFees"><%%VALUE(TotalFees)%%></td>
+		<td id="students-AdvanceFees-<%%VALUE(id)%%>" class="students-AdvanceFees text-right"><%%VALUE(AdvanceFees)%%></td>
+		<td id="students-Balance-<%%VALUE(id)%%>" class="students-Balance text-right"><%%VALUE(Balance)%%></td>
+		<td id="students-Parent-<%%VALUE(id)%%>" class="students-Parent"><%%VALUE(Parent)%%></td>

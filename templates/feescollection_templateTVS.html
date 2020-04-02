@@ -1,0 +1,15 @@
+<!-- Edit this file to change the layout of each record in the table view -->
+<!-- To disable clicking of a field, remove the  and  formatters around it-->
+
+<!-- If you wish to hide the table view header that contains the column titles, -->
+<!-- add the following to the feescollection_init() hook (in hooks/feescollection.php file) -->
+<!--     $options->ShowTableHeader = 0;     -->
+
+		<td id="feescollection-Student-<%%VALUE(id)%%>" class="feescollection-Student"><%%VALUE(Student)%%></td>
+		<td id="feescollection-Class-<%%VALUE(id)%%>" class="feescollection-Class"><%%VALUE(Class)%%></td>
+		<td id="feescollection-Session-<%%VALUE(id)%%>" class="feescollection-Session"><%%VALUE(Session)%%></td>
+		<td id="feescollection-PaidAmount-<%%VALUE(id)%%>" class="feescollection-PaidAmount text-right"><%%VALUE(PaidAmount)%%></td>
+		<td id="feescollection-Balance-<%%VALUE(id)%%>" class="feescollection-Balance text-right"><%%VALUE(Balance)%%></td>
+		<td id="feescollection-Branch-<%%VALUE(id)%%>" class="feescollection-Branch"><%%VALUE(Branch)%%></td>
+		<td id="feescollection-Date-<%%VALUE(id)%%>" class="feescollection-Date"><%%VALUE(Date)%%></td>
+		<td id="feescollection-Remarks-<%%VALUE(id)%%>" class="feescollection-Remarks"><%%VALUE(Remarks)%%></td>

@@ -1,0 +1,13 @@
+<!-- Edit this file to change the layout of each record in the table view -->
+<!-- To disable clicking of a field, remove the <%%SELECT%%> and <%%ENDSELECT%%> formatters around it-->
+
+<!-- If you wish to hide the table view header that contains the column titles, -->
+<!-- add the following to the teachers_init() hook (in hooks/teachers.php file) -->
+<!--     $options->ShowTableHeader = 0;     -->
+
+		<td id="teachers-Name-<%%VALUE(id)%%>" class="teachers-Name"><%%SELECT%%><%%VALUE(Name)%%><%%ENDSELECT%%></td>
+		<td id="teachers-Gender-<%%VALUE(id)%%>" class="teachers-Gender"><%%SELECT%%><%%VALUE(Gender)%%><%%ENDSELECT%%></td>
+		<td id="teachers-Age-<%%VALUE(id)%%>" class="teachers-Age text-right"><%%SELECT%%><%%VALUE(Age)%%><%%ENDSELECT%%></td>
+		<td id="teachers-Phone-<%%VALUE(id)%%>" class="teachers-Phone"><%%SELECT%%><%%VALUE(Phone)%%><%%ENDSELECT%%></td>
+		<td id="teachers-Email-<%%VALUE(id)%%>" class="teachers-Email"><a href="mailto:<%%VALUE(Email)%%>" title="<%%VALUE(Email)%%>" class="btn btn-default"><i class="glyphicon glyphicon-envelope text-info"></i></a></td>
+		<td id="teachers-StaffNumber-<%%VALUE(id)%%>" class="teachers-StaffNumber text-right"><%%SELECT%%><%%VALUE(StaffNumber)%%><%%ENDSELECT%%></td>

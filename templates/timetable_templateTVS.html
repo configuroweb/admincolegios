@@ -1,0 +1,13 @@
+<!-- Edit this file to change the layout of each record in the table view -->
+<!-- To disable clicking of a field, remove the  and  formatters around it-->
+
+<!-- If you wish to hide the table view header that contains the column titles, -->
+<!-- add the following to the timetable_init() hook (in hooks/timetable.php file) -->
+<!--     $options->ShowTableHeader = 0;     -->
+
+		<td id="timetable-Time_Table-<%%VALUE(id)%%>" class="timetable-Time_Table"><a href="link.php?t=timetable&f=Time_Table&i=<%%VALUE(id)%%>" target="_blank" title="<%%VALUE(Time_Table)%%>" class="btn btn-default"><i class="glyphicon glyphicon-file text-info"></i></a></td>
+		<td id="timetable-Class-<%%VALUE(id)%%>" class="timetable-Class"><%%VALUE(Class)%%></td>
+		<td id="timetable-Stream-<%%VALUE(id)%%>" class="timetable-Stream"><%%VALUE(Stream)%%></td>
+		<script>$j(function(){
+			var e_Time_Table = '<%%VALUE(Time_Table)%%>'; if(e_Time_Table == '' || e_Time_Table == '&nbsp;') $j(/*<*/ '#timetable-Time_Table-<%%VALUE(id)%%>' /*>*/).html('');
+		});</script>

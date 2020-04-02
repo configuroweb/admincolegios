@@ -1,0 +1,14 @@
+<!-- Edit this file to change the layout of each record in the table view -->
+<!-- To disable clicking of a field, remove the  and  formatters around it-->
+
+<!-- If you wish to hide the table view header that contains the column titles, -->
+<!-- add the following to the classattendance_init() hook (in hooks/classattendance.php file) -->
+<!--     $options->ShowTableHeader = 0;     -->
+
+		<td id="classattendance-Subject-<%%VALUE(id)%%>" class="classattendance-Subject"><%%VALUE(Subject)%%></td>
+		<td id="classattendance-Student-<%%VALUE(id)%%>" class="classattendance-Student"><%%VALUE(Student)%%></td>
+		<td id="classattendance-RegNo-<%%VALUE(id)%%>" class="classattendance-RegNo"><%%VALUE(RegNo)%%></td>
+		<td id="classattendance-Class-<%%VALUE(id)%%>" class="classattendance-Class"><%%VALUE(Class)%%></td>
+		<td id="classattendance-Stream-<%%VALUE(id)%%>" class="classattendance-Stream"><%%VALUE(Stream)%%></td>
+		<td id="classattendance-Attended-<%%VALUE(id)%%>" class="classattendance-Attended"><%%VALUE(Attended)%%></td>
+		<td id="classattendance-Date-<%%VALUE(id)%%>" class="classattendance-Date"><%%VALUE(Date)%%></td>

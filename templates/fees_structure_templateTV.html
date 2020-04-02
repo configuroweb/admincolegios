@@ -1,0 +1,10 @@
+<!-- Edit this file to change the layout of each record in the table view -->
+<!-- To disable clicking of a field, remove the <%%SELECT%%> and <%%ENDSELECT%%> formatters around it-->
+
+<!-- If you wish to hide the table view header that contains the column titles, -->
+<!-- add the following to the fees_structure_init() hook (in hooks/fees_structure.php file) -->
+<!--     $options->ShowTableHeader = 0;     -->
+
+		<td id="fees_structure-Class-<%%VALUE(id)%%>" class="fees_structure-Class"><%%SELECT%%><%%VALUE(Class)%%><%%ENDSELECT%%></td>
+		<td id="fees_structure-Particulars-<%%VALUE(id)%%>" class="fees_structure-Particulars"><%%SELECT%%><%%VALUE(Particulars)%%><%%ENDSELECT%%></td>
+		<td id="fees_structure-Total-<%%VALUE(id)%%>" class="fees_structure-Total text-right"><%%SELECT%%><%%VALUE(Total)%%><%%ENDSELECT%%></td>
